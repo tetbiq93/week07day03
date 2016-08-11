@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>week07day03</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/jquery-3.1.0.min.js"></script> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+ <div class="bigDiv">
+      <div class="main">
+   	  <img src="image/img1.jpg">
+   </div>
+   	<div class="middle">
+   	  <div class="scroll">
+   		<div class="ortaqDiv">
+   		 	<img src="image/img2.jpg" class="picture">
+   		</div>
+   		<div class="ortaqDiv">
+   			 	<img src="image/img3.jpg" class="picture">
+   		</div>
+   		<div class="ortaqDiv">
+   			 	<img src="image/img4.jpg" class="picture">
+   		</div>
+   		<div class="ortaqDiv">
+   			 	<img src="image/img5.jpg" class="picture">
+   		</div>
+   		<div class="ortaqDiv">
+   			 	<img src="image/img6.jpg" class="picture">
+   		</div>
+   		<div class="ortaqDiv">
+   			 	<img src="image/img7.jpg" class="picture">
+   		</div>
+   	</div>
+      </div>
+
+   </div>
+  
+
+</body>
+</html>
+
+
+<script>
+   $(document).ready(function(){
+   $('.picture').click(function(event) {
+     $('.main img').attr('src', ''+$(this).attr('src')+'');
+   });
+});
+</script>
+
+
+
+
+
